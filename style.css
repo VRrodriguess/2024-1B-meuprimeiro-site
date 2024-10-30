@@ -1,8 +1,53 @@
-   :root{ 
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+ 
+ *{
+     margin: 0;
+     padding:  0;
+ }
+ 
+ :root{ 
     --Preto: #0d1b2aff;
     --Azul-escuro: #1b263bff;
     --Azul-claro: #415a77ff;
     --Azul-clarinho: #778da9ff;
     --branco: #e0e1ddff;
-    }
+    --fonte-titulo: "Quicksand", sans-serif;
+    --fonte-texto: "Playfair Display", serif;
+   }
+
+   body{
+       background-color: var(--branco);
+       font-family: var(--fonte-texto);
+   }
      
+   .cabecalho{
+      display: flex;
+      align-items: center;
+      justify-self: space-between;
+      background-color: var(--Azul-claro);
+   }
+
+   .cabecalho-logo{
+      width: 16%;
+      border-radius: 100%;
+      padding: 1em;
+   }
+
+   .cabecalho-link{
+      text-decoration: black;
+      color: var(--Azul-clarinho);
+      font-size: 2em;
+      margin-right: 1em;
+   }
+
+   .cabecalho-link:hover{
+      color: var(--Azul-claro);
+      font-size: 1.9em;
+      transition: 0.3s;
+   }
+
+   .principal-capa{
+      background-color: #e0e1ddff;
+      display: flex;
+      
+   }
